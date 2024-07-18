@@ -1,0 +1,19 @@
+run = ["bash"]
+
+# entrypoint = "main.sh"
+modules = ["python-3.10"]
+
+[nix]
+channel = "stable-22_11"
+
+[[ports]]
+localPort = 5000
+externalPort = 5000
+
+[[ports]]
+localPort = 8833
+externalPort = 80
+
+[[ports]]
+localPort = 8834
+externalPort = 3000
